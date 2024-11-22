@@ -107,9 +107,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease, height 0.2s ease;
   overflow: hidden;
+  transform: scale(0);
 }
 
+.wrapper.active-login {
+  transform: scale(1);
+}
 .icon-close {
   position: absolute;
   top: 0px;
@@ -286,14 +291,30 @@ header {
   transform: scaleX(1);
   transform-origin: left;
 }
+/* when the active class added */
 
-/* just temperary */
-/* .wrapper .form-box.Login {
-  display: none;
+.wrapper.active {
+  height: 520px;
+}
+
+/* .wrapper.active .form-box.login {
+  transition: none;
+  height: ;
 } */
+
+.wrapper .form-box.Login {
+  /* background-color: red; */
+  transition: transform 0.18s ease;
+}
+
+.wrapper .form-box.register {
+  /* background-color: greenyellow; */
+  transition: transform 0.18s ease;
+}
 
 .wrapper .form-box.register {
   transform: translateX(400px);
+  /* transition: none; */
   position: absolute;
 }
 
