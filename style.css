@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("background.jpg") no-repeat center center/cover;
+  background: url("background.jpeg") no-repeat center center/cover;
   position: relative;
 }
 
@@ -23,7 +23,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   z-index: -1;
 }
 
@@ -107,6 +107,24 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.icon-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 2rem;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background-color: #162938;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 20px;
+  z-index: 1;
 }
 
 .wrapper .form-box {
@@ -167,4 +185,124 @@ header {
   font-size: 1.2rem;
   color: #162916;
   line-height: 57px;
+}
+
+.remember-forgot {
+  /* background-color: red; */
+  font-size: 0.9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.remember-forgot label input {
+  accent-color: #162938;
+  margin-right: 3px;
+  position: relative;
+}
+
+.remember-forgot a {
+  color: #162938;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.remember-forgot a::after {
+  /* text-decoration: underline; */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: #162938;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 0.5s ease;
+}
+
+.remember-forgot a:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #162938;
+  border: none;
+  outline: none;
+  /* margin: 15px 0; */
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #162938;
+}
+
+.login-registre p {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-registre p a {
+  margin-left: 10px;
+  color: #162938;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.login-registre p a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #162938;
+  border-radius: 5px;
+  left: 0;
+  bottom: -6px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: all 0.5s ease;
+}
+
+.login-registre p a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* just temperary */
+/* .wrapper .form-box.Login {
+  display: none;
+} */
+
+.wrapper .form-box.register {
+  transform: translateX(400px);
+  position: absolute;
+}
+
+.wrapper.active .form-box.Login {
+  /* background-color: red; */
+  transform: translateX(-500px);
+}
+
+.wrapper.active .form-box.register {
+  /* background-color: green; */
+  transform: translateX(0);
 }
