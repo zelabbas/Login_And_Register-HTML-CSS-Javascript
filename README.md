@@ -16,3 +16,10 @@
 2. **Register Page**
 
    <img src="register.png" alt="Register Page" width="500">
+
+#### A small Video
+
+<video width="640" height="360" controls>
+  <source src="video.mov" type="video/mov">
+  Your browser does not support the video tag.
+</video>
