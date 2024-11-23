@@ -19,9 +19,7 @@
 
 #### A small Video
 
-[Click here to watch the video](video.mp4)
-
-<!-- <video width="640" height="360" controls>
+<video width="640" height="360" controls>
   <source src="video.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video> -->
+</video>
