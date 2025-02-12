@@ -11,15 +11,8 @@
 
 1. **Login Page**
 
-   <img src="login.png" alt="Login Page" width="500">
+   <img src="./Tamplet-1/login.png" alt="Login Page" width="500">
 
 2. **Register Page**
 
-   <img src="register.png" alt="Register Page" width="500">
-
-#### A small Video
-
-<video width="640" height="360" controls>
-  <source src="video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+   <img src="./Tamplet-1/register.png" alt="Register Page" width="500">
